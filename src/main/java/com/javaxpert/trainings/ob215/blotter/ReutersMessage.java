@@ -41,4 +41,13 @@ public class ReutersMessage {
     public int hashCode() {
         return Objects.hash(getMsg(), getTimeStamp());
     }
+
+    @Override
+    public String toString() {
+        return "ReutersMessage{" +
+                "msg='" + msg + '\'' +
+                ", priority=" + priority +
+                ", timeStamp=" + timeStamp +
+                '}';
+    }
 }
